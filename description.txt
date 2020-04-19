@@ -1,0 +1,7 @@
+If you die and go to pick up your dropped items again, this mod will auto-reequip your armor, dyes, accessories, and inventory for you!
+
+If an item is already in one of those slots when you pick up your dropped gear, it will attempt to move it to a different slot, or dropping it from your inventory as a last resort.
+
+Auto-reequipping is toggalable per section of inventory (armor, accessories, dyes, social slots, hotbar, inventory, ammo)
+
+By default, everything but the main inventory (excluding hotbar) is auto-reequipped.
