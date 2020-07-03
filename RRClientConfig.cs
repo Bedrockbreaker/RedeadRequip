@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.ComponentModel;
 using Terraria.ModLoader.Config;
 
@@ -56,5 +57,11 @@ namespace RedeadRequip {
 		[DefaultValue(true)]
 		[Label("Allow auto-equipping pets, minecarts, mounts, and grapple hooks")]
 		public bool allowMiscEquip;
+
+		[Header("Ignored Items")]
+		[JsonDefaultListValue("{\"name\": \"CopperShortsword\"}")]
+		[Label("Ignored items")]
+		[Tooltip("List of items which will won't be restored to their item slots, and won't overwrite your previous pre-death inventory.\nHandy to add any items you spawn with here, such as copper tools")]
+		public List<ItemDefinition> ignoredItems {get; set;} = new List<ItemDefinition>();
 	}
 }
